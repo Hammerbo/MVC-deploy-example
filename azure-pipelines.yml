@@ -9,6 +9,13 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  buildConfiguration: 'Release'
+  azureSubscription: 'AZ203-ServiceConnection'
+  resourceGroupName: 'az203-hammerbo-mvc'
+  azureRegion: 'westeurope'
+  webappname: 'hammerbo-az203-mvc'
+
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
